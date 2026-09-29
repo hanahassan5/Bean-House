@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bean House</title>
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- stylre css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- start top bar section -->
+
+    <div class="top-bar py-2 text-white">
+
+        <div class="container px-4">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-6">
+                    <span class="me-4"><i class="fas fa-phone-alt me-2"></i> +00 1234 567</span>
+                    <span><i class="fas fa-paper-plane me-2"></i> youremail@email.com</span>
+                </div>
+
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-white mx-2"><i class="fab fa-dribbble"></i></a>
+
+                    <a href="#" class="text-white ms-4">SIGN UP</a>
+                    <a href="#" class="text-white ms-3">LOG IN</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- end top bar section -->
+
+
+    <!-- start navbar section -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark py-4 position-absolute w-100" style="z-index: 10;">
+
+        <div class="container">
+
+            <a class="navbar-brand fs-5" href="#">BEAN <span class="text-secondary">HOUSE</span></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+                <ul class="navbar-nav align-items-lg-center">
+
+                    <li class="nav-item"><a class="nav-link active mx-3" href="#">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link mx-3" href="#">ABOUT</a></li>
+
+                    <li class="nav-item dropdown mx-3">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">PRODUCTS</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Wine</a></li>
+                            <li><a class="dropdown-item" href="#">Whisky</a></li>
+                            <li><a class="dropdown-item" href="#">Beer</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a class="nav-link mx-3" href="#">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link mx-3" href="#">CONTACT</a></li>
+
+                    <li class="nav-item position-relative ms-3">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-shopping-bag fs-5 text-brown"></i>
+                            <span class="cart-count badge rounded-pill bg-secondary">3</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- end navbar section -->
+
+
+    <!-- start hero section -->
+
+    <section class="hero d-flex align-items-center text-center text-white">
+
+        <div class="container hero-content">
+
+            <h1 class="hero-title mb-3">
+                <span class="outline-text">Good</span> Coffee <span class="outline-text">for Good</span> <br> Moments.
+            </h1>
+
+            <a href="#" class="btn btn-brown px-3 py-2 me-1">Shop Now</a>
+            <a href="#" class="btn btn-outline-light px-3 py-2">Read more</a>
+
+        </div>
+
+    </section>
+
+    <!-- end hero section -->
+
+
+    <!-- start services section -->
+
+    <section class="services text-white">
+
+        <div class="container">
+
+            <div class="row g-0">
+
+                <div class="col-md-4 service-box box-1 d-flex">
+                    <i class="fas fa-coffee fs-1 me-3"></i>
+                    <div>
+                        <h5 class="mb-3">FRESHLY BREWED</h5>
+                        <p class="mb-0">
+                            Every cup is freshly brewed using carefully selected coffee beans for a rich and smooth
+                            taste.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 service-box box-2 d-flex">
+                    <i class="fas fa-seedling fs-1 me-3"></i>
+                    <div>
+                        <h5 class="mb-3">QUALITY BEANS</h5>
+                        <p class="mb-0">
+                            We choose quality coffee beans and roast them to bring out their unique flavor and aroma.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-4 service-box box-3 d-flex">
+                    <i class="fas fa-clock fs-1 me-3"></i>
+                    <div>
+                        <h5 class="mb-3">QUICK &amp; EASY ORDER</h5>
+                        <p class="mb-0">
+                            Choose your favorite drink and enjoy a simple ordering experience made for your busy day.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end services section -->
+
+
+    <!-- start about section -->
+
+    <section class="about py-5">
+
+        <div class="container" style="max-width: 1140px;">
+
+            <div class="row align-items-center g-5 py-5">
+
+                <div class="col-lg-6">
+                    <img src="imgs/about.png" class="w-100">
+                </div>
+
+                <div class="col-lg-6">
+                    <span class="since">Since 1905</span>
+                    <h2 class="about-title mb-3">Desire Meets A New Taste</h2>
+
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It
+                        is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+
+                    <p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it
+                        would have been rewritten a thousand times and everything that was left from its origin would be
+                        the word "and" and the Little Blind Text should turn around and return to its own, safe country.
+                    </p>
+
+                    <h3 class="years mt-4"><span>115</span> Years of Experience In Business</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end about section -->
+
+
+    <!-- start categories section -->
+
+    <section class="categories pt-0 pb-4">
+
+        <div class="container" style="max-width: 1150px;">
+
+            <div class="row text-center g-4">
+
+                <div class="col-6 col-md-2 mb-3">
+                    <a href="#" class="category-item">
+                        <img src="imgs/1.png">
+                        <h6 class="mt-3 fw-medium">Brandy</h6>
+                    </a>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <a href="#" class="category-item">
+                        <img src="imgs/2.png">
+                        <h6 class="mt-3 fw-medium">Gin</h6>
+                    </a>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <a href="#" class="category-item">
+                        <img src="imgs/3.png">
+                        <h6 class="mt-3 fw-medium">Rum</h6>
+                    </a>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <a href="#" class="category-item">
+                        <img src="imgs/4.png">
+                        <h6 class="mt-3 fw-medium">Tequila</h6>
+                    </a>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <a href="#" class="category-item">
+                        <img src="imgs/5.png">
+                        <h6 class="mt-3 fw-medium">Vodka</h6>
+                    </a>
+                </div>
+
+                <div class="col-6 col-md-2 mb-3">
+                    <a href="#" class="category-item">
+                        <img src="imgs/6.png">
+                        <h6 class="mt-3 fw-medium">Whiskey</h6>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end categories section -->
+
+
+    <!-- start products section -->
+
+    <section class="products py-5">
+
+        <div class="container py-3" style="max-width: 1100px;">
+
+            <div class="text-center mb-5">
+                <span class="section-sub">Our Delightful offerings</span>
+                <h2 class="section-title">Tastefully Yours</h2>
+            </div>
+
+            <div class="row text-center g-4">
+
+                <div class="col-6 col-md-3">
+                    <div class="product-img">
+                        <img src="imgs/11.png">
+                        <div class="product-overlay">
+                            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="far fa-eye"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="product-text">
+                        <span class="badge-tag bg-brown">Sale</span>
+                        <span class="product-cat">Brandy</span>
+                        <h5 class="product-name">Bacardi 151</h5>
+                        <p class="product-price"><del>$69.00</del> $49.00</p>
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="product-img">
+                        <img src="imgs/12.png">
+                        <div class="product-overlay">
+                            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="far fa-eye"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="product-text">
+                        <span class="badge-tag bg-brown">Best Seller</span>
+                        <span class="product-cat">Gin</span>
+                        <h5 class="product-name">Jim Beam Kentucky Straight</h5>
+                        <p class="product-price">$69.00</p>
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="product-img">
+                        <img src="imgs/13.png">
+                        <div class="product-overlay">
+                            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="far fa-eye"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="product-text">
+                        <span class="badge-tag bg-success">New Arrival</span>
+                        <span class="product-cat">Rum</span>
+                        <h5 class="product-name">Citadelle</h5>
+                        <p class="product-price">$69.00</p>
+                    </div>
+
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="product-img">
+                        <img src="imgs/14.png">
+
+                        <div class="product-overlay">
+                            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="far fa-eye"></i></a>
+                        </div>
+
+                    </div>
+                    <span class="product-cat">Rum</span>
+                    <h5 class="product-name">The Glenlivet</h5>
+                    <p class="product-price">$69.00</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="product-img">
+                        <img src="imgs/15.png">
+
+                        <div class="product-overlay">
+                            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="far fa-eye"></i></a>
+                        </div>
+
+                    </div>
+                    <span class="product-cat">Whiskey</span>
+                    <h5 class="product-name">Black Label</h5>
+                    <p class="product-price">$69.00</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="product-img">
+                        <img src="imgs/16.png">
+
+                        <div class="product-overlay">
+                            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="far fa-eye"></i></a>
+                        </div>
+
+                    </div>
+                    <span class="product-cat">Tequila</span>
+                    <h5 class="product-name">Macallan</h5>
+                    <p class="product-price">$69.00</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="product-img">
+                        <img src="imgs/17.png">
+
+                        <div class="product-overlay">
+                            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="far fa-eye"></i></a>
+                        </div>
+
+                    </div>
+                    <span class="product-cat">Vodka</span>
+                    <h5 class="product-name">Old Monk</h5>
+                    <p class="product-price">$69.00</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="product-img">
+                        <img src="imgs/18.png">
+
+                        <div class="product-overlay">
+                            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+                            <a href="#"><i class="far fa-heart"></i></a>
+                            <a href="#"><i class="far fa-eye"></i></a>
+                        </div>
+
+                    </div>
+                    <span class="product-cat">Whiskey</span>
+                    <h5 class="product-name">Jameson Irish Whiskey</h5>
+                    <p class="product-price">$69.00</p>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="#" class="btn btn-brown view-all px-5 py-2">View All Products <i
+                        class="fas fa-arrow-right ms-2"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- end products section -->
+
+
+    <!-- start reviews section -->
+
+    <section class="reviews text-white py-5">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <span class="reviews-sub">Testimonial</span>
+                <h2 class="reviews-title">Happy Clients</h2>
+            </div>
+
+            <div id="reviewsSlider" class="carousel slide pt-4">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <div class="row g-4">
+
+                            <div class="col-md-4">
+                                <div class="review-box">
+                                    <span class="quote-icon"><i class="fas fa-quote-left"></i></span>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts.</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <img src="imgs/112.jpg" class="review-img me-3">
+                                        <div>
+                                            <h6 class="mb-0">Roger Scott</h6>
+                                            <small>Marketing Manager</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="review-box">
+                                    <span class="quote-icon"><i class="fas fa-quote-left"></i></span>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts.</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <img src="imgs/113.jpg" class="review-img me-3">
+                                        <div>
+                                            <h6 class="mb-0">Roger Scott</h6>
+                                            <small>Marketing Manager</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="review-box">
+                                    <span class="quote-icon"><i class="fas fa-quote-left"></i></span>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts.</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <img src="imgs/114.jpg" class="review-img me-3">
+                                        <div>
+                                            <h6 class="mb-0">Roger Scott</h6>
+                                            <small>Marketing Manager</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row g-4">
+
+                            <div class="col-md-4">
+                                <div class="review-box">
+                                    <span class="quote-icon"><i class="fas fa-quote-left"></i></span>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts.</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <img src="imgs/115.jpg" class="review-img me-3">
+                                        <div>
+                                            <h6 class="mb-0">Roger Scott</h6>
+                                            <small>Marketing Manager</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="review-box">
+                                    <span class="quote-icon"><i class="fas fa-quote-left"></i></span>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts.</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <img src="imgs/116.jpg" class="review-img me-3">
+                                        <div>
+                                            <h6 class="mb-0">Roger Scott</h6>
+                                            <small>Marketing Manager</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="review-box">
+                                    <span class="quote-icon"><i class="fas fa-quote-left"></i></span>
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts.</p>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <img src="imgs/117.jpg" class="review-img me-3">
+                                        <div>
+                                            <h6 class="mb-0">Roger Scott</h6>
+                                            <small>Marketing Manager</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#reviewsSlider"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#reviewsSlider"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+
+                <div class="carousel-indicators reviews-dots">
+                    <button type="button" data-bs-target="#reviewsSlider" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#reviewsSlider" data-bs-slide-to="1"></button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- end reviews section -->
+
+
+    <!-- start blog section -->
+
+    <section class="blog py-5">
+
+        <div class="container" style="max-width: 1200px;">
+
+            <div class="text-center mb-5">
+                <span class="section-sub">Blog</span>
+                <h2 class="section-title">Recent Blog</h2>
+            </div>
+
+            <div class="row g-5">
+
+                <div class="col-md-6">
+                    <div class="blog-card row g-0">
+                        <div class="col-5">
+                            <img src="imgs/1111.jpg" class="blog-img">
+                        </div>
+                        <div class="col-7 blog-body">
+                            <span class="blog-date"><i class="far fa-calendar me-2"></i>23 April 2020</span>
+                            <h5 class="blog-title">The Recipe from a Winemaker's Restaurent</h5>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia.</p>
+                            <a href="#" class="blog-link">Continue <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="blog-card row g-0">
+                        <div class="col-5">
+                            <img src="imgs/1112.jpg" class="blog-img">
+                        </div>
+                        <div class="col-7 blog-body">
+                            <span class="blog-date"><i class="far fa-calendar me-2"></i>23 April 2020</span>
+                            <h5 class="blog-title">The Recipe from a Winemaker's Restaurent</h5>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia.</p>
+                            <a href="#" class="blog-link">Continue <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="blog-card row g-0">
+                        <div class="col-5">
+                            <img src="imgs/1113.jpg" class="blog-img">
+                        </div>
+                        <div class="col-7 blog-body">
+                            <span class="blog-date"><i class="far fa-calendar me-2"></i>23 April 2020</span>
+                            <h5 class="blog-title">The Recipe from a Winemaker's Restaurent</h5>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia.</p>
+                            <a href="#" class="blog-link">Continue <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="blog-card row g-0">
+                        <div class="col-5">
+                            <img src="imgs/1114.jpg" class="blog-img">
+                        </div>
+                        <div class="col-7 blog-body">
+                            <span class="blog-date"><i class="far fa-calendar me-2"></i>23 April 2020</span>
+                            <h5 class="blog-title">The Recipe from a Winemaker's Restaurent</h5>
+                            <p>A small river named Duden flows by their place and supplies it with the necessary
+                                regelialia.</p>
+                            <a href="#" class="blog-link">Continue <i class="fas fa-arrow-right ms-1"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- end blog section -->
+
+
+    <!-- start footer section -->
+
+    <footer class="footer text-white py-5">
+
+        <div class="container py-4">
+            <div class="row g-5">
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-brand">LIQUOR <span class="text-secondary">STORE</span></h5>
+                    <p class="mt-4">Far far away, behind the word mountains, far from the countries.</p>
+                    <div class="footer-social mt-4">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-2">
+                    <h5 class="footer-title">My Accounts</h5>
+                    <ul class="footer-list mt-4">
+                        <li><a href="#"><i class="fas fa-chevron-right me-2"></i>My Account</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right me-2"></i>Register</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right me-2"></i>Log In</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right me-2"></i>My Order</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-2">
+                    <h5 class="footer-title">Information</h5>
+                    <ul class="footer-list mt-4">
+                        <li><a href="#"><i class="fas fa-chevron-right me-2"></i>About us</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right me-2"></i>Catalog</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right me-2"></i>Contact us</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right me-2"></i>Term &amp; Conditions</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-2">
+                    <h5 class="footer-title">Quick Link</h5>
+                    <ul class="footer-list mt-4">
+                        <li><a href="#"><i class="fas fa-chevron-right me-2"></i>New User</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right me-2"></i>Help Center</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right me-2"></i>Report Spam</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right me-2"></i>Faq's</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <h5 class="footer-title">Have a Questions?</h5>
+                    <ul class="footer-contact mt-4">
+                        <li class="d-flex mb-3">
+                            <i class="fas fa-map me-3"></i>
+                            <span>203 Fake St. Mountain View, San Francisco, California, USA</span>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="fas fa-phone-alt me-3"></i>
+                            <span>+2 392 3929 210</span>
+                        </li>
+                        <li class="d-flex">
+                            <i class="fas fa-paper-plane me-3"></i>
+                            <span>info@yourdomain.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- end footer section -->
+
+
+    <!-- start copyright section -->
+
+    <div class="copyright py-4">
+
+        <div class="container">
+            <p class="mb-0">Copyright &copy;2026 All rights reserved | This template is made with <i
+                    class="fas fa-heart"></i> by <a href="#"> Colorlib.com</a></p>
+        </div>
+
+    </div>
+
+    <!-- end copyright section -->
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

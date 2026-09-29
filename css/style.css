@@ -1,0 +1,652 @@
+html, body {
+    overflow-x: hidden;
+}
+
+.row {
+    --bs-gutter-x: 1.5rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/* start top bar section */
+
+.top-bar {
+    background-color: #a64125;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.top-bar a {
+    text-decoration: none;
+}
+
+.top-bar a:hover {
+    color: #fff;
+    opacity: 0.7;
+}
+
+/* end top bar section */
+
+
+/* start navbar section */
+
+.text-brown {
+    color: #a64125;
+}
+
+.navbar-nav .nav-link {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.cart-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 10px;
+}
+
+/* end navbar section */
+
+
+/* start hero section */
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+    url(../imgs/hero.jpg) center/100% auto fixed;
+}
+
+.hero-content {
+    transform: rotate(-4deg);
+    max-width: 900px;
+    animation: heroUp 0.8s ease-out;
+}
+
+.hero-title {
+    font-family: "Spectral", serif;
+    font-size: 68px;
+    line-height: 1.3;
+}
+
+.outline-text {
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.btn-brown {
+    background-color: #a64125;
+    color: #fff;
+}
+
+.btn-brown:hover {
+    background-color: #8a3620;
+    color: #fff;
+}
+
+@keyframes heroUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px) rotate(-4deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) rotate(-4deg);
+    }
+}
+
+/* end hero section */
+
+
+/* start services section */
+
+.service-box {
+    padding: 40px 35px;
+}
+
+.services {
+    background-color: #b5492a;
+}
+
+.box-2 { background-color: #a64125; }
+.box-3 { background-color: #963a20; }
+
+.services h5 {
+    font-family: "Spectral", serif;
+    font-size: 17px;
+    font-weight: 500;
+    max-width: 180px;
+}
+
+.services p {
+    font-size: 14px;
+    line-height: 2;
+    max-width: 230px;
+}
+
+.services i {
+    font-size: 40px;
+}
+
+/* end services section */
+
+
+/* start about section */
+
+.about {
+    font-family: "Spectral", serif;
+}
+
+.since {
+    color: #a64125;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.about-title {
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.about p {
+    color: #777;
+    line-height: 2;
+    margin-bottom: 25px;
+}
+
+.years {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.years span {
+    color: #a64125;
+    font-style: italic;
+}
+
+/* end about section */
+
+
+/* start categories section */
+
+.category-item {
+    display: block;
+    text-decoration: none;
+    color: #333;
+}
+
+.category-item img {
+    width: 140px;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid #a64125;
+    padding: 8px;
+    transition: transform 0.4s;
+}
+
+.category-item:hover img {
+    transform: scale(1.05);
+}
+
+.category-item h6 {
+    font-family: "Spectral", serif;
+    font-size: 18px;
+    color: #333;
+}
+
+/* end categories section */
+
+
+/* start products section */
+
+.section-sub {
+    color: #a64125;
+    font-family: "Spectral", serif;
+    font-style: italic;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.section-title {
+    font-family: "Spectral", serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.bg-brown {
+    background-color: #a64125;
+}
+
+.product-text {
+    position: relative;
+    padding-top: 25px;
+}
+
+
+.badge-tag {
+    position: absolute ;
+    top: 0 ;
+    left: 4px;
+    color: #fff;
+    font-size: 12px;
+    padding: 0px 10px;
+    line-height: 1.6;
+}
+
+.product-img {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.product-cat {
+    color: #a64125;
+    font-family: "Spectral", serif;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.product-name {
+    font-family: "Spectral", serif;
+    font-size: 18px;
+    margin: 5px auto;
+    max-width: 180px;
+}
+
+.product-price {
+    font-family: "Spectral", serif;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.product-price del {
+    color: #aaa;
+    margin-right: 5px;
+}
+
+.view-all {
+    font-family: "Spectral", serif;
+    font-weight: 700;
+    border-radius: 3px;
+}
+
+/* end products section */
+
+
+/* start product hover */
+
+.product-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.product-img:hover .product-overlay {
+    opacity: 1;
+}
+
+.product-overlay a {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.product-overlay a:hover {
+    background-color: #a64125;
+    border-color: #a64125;
+}
+
+/* end product hover */
+
+
+/* start reviews section */
+
+.reviews {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url(../imgs/111.jpg) center/cover fixed;
+}
+
+.reviews-sub {
+    font-family: "Spectral", serif;
+    font-style: italic;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.reviews-title {
+    font-family: "Spectral", serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.review-box {
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 35px 20px 22px;
+    font-family: "Spectral", serif;
+}
+
+.review-box p {
+    font-style: italic;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.quote-icon {
+    position: absolute;
+    top: -22px;
+    left: 20px;
+    z-index: 5;
+    width: 44px;
+    height: 44px;
+    background-color: #a64125;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+.review-img {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reviews-dots {
+    position: static;
+    margin-top: 40px;
+}
+
+.reviews-dots button {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+    margin: 0 5px !important;
+}
+
+.reviews-dots .active {
+    background-color: #a64125 !important;
+}
+
+.reviews .carousel-inner,
+.reviews .carousel-item {
+    overflow: visible;
+}
+
+.reviews .carousel-control-prev {
+    left: -60px;
+    width: 40px;
+}
+
+.reviews .carousel-control-next {
+    right: -60px;
+    width: 40px;
+}
+
+/* end reviews section */
+
+
+/* start blog section */
+
+.blog-card {
+    background-color: #f8f6f2;
+    height: 100%;
+}
+
+.blog-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.blog-body {
+    padding: 32px 26px;
+    font-family: "Spectral", serif;
+}
+
+.blog-date {
+    color: #888;
+    font-size: 13px;
+}
+
+.blog-title {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 21px;
+    margin: 14px 0;
+}
+
+.blog-body p {
+    color: #999;
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+.blog-link {
+    color: #a64125;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.blog-link:hover {
+    color: #8a3620;
+}
+
+/* end blog section */
+
+
+/* start footer section */
+
+.footer {
+    background-color: #1f1f1f;
+    font-family: "Spectral", serif;
+}
+
+.footer-brand {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.footer p {
+    line-height: 2;
+    font-size: 15px;
+}
+
+.footer-social a {
+    width: 44px;
+    height: 44px;
+    background-color: #a64125;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.footer-social a:hover {
+    background-color: #8a3620;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-list li {
+    margin-bottom: 14px;
+}
+
+.footer-list a {
+    color: #999;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s;
+}
+
+.footer-list a:hover {
+    color: #fff;
+}
+
+.footer-list i {
+    color: #666;
+    font-size: 12px;
+}
+
+.footer-contact {
+    list-style: none;
+    padding: 0;
+    color: #999;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.footer-contact i {
+    color: #fff;
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+/* end footer section */
+
+
+/* start copyright section */
+
+.copyright {
+    background-color: #000;
+    font-family: "Spectral", serif;
+}
+
+.copyright p {
+    color: #888;
+    font-size: 15px;
+}
+
+.copyright a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.copyright a:hover {
+    color: #a64125;
+}
+
+/* end copyright section */
+
+
+/* start responsive */
+
+@media (max-width: 991px) {
+
+    .hero-content {
+        transform: none;
+    }
+
+    .hero-title {
+        font-size: 42px;
+    }
+
+    .reviews .carousel-control-prev { left: 0; }
+    .reviews .carousel-control-next { right: 0; }
+
+}
+
+@media (max-width: 767px) {
+
+    .hero-title {
+        font-size: 30px;
+    }
+
+    .hero-title br {
+        display: none;
+    }
+
+    .about-title,
+    .section-title,
+    .reviews-title {
+        font-size: 26px;
+    }
+
+    .years {
+        font-size: 22px;
+    }
+
+    .services h5,
+    .services p {
+        max-width: 100%;
+    }
+
+    .product-img {
+        height: 260px;
+    }
+
+    .product-name {
+        font-size: 15px;
+    }
+
+    .blog-card .col-5,
+    .blog-card .col-7 {
+        width: 100%;
+    }
+
+    .blog-img {
+        height: 200px;
+    }
+
+    .reviews .carousel-inner {
+        overflow: hidden;
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    .top-bar {
+        text-align: center;
+    }
+
+    .category-item img {
+        width: 110px;
+    }
+
+}
+
+/* end responsive */
